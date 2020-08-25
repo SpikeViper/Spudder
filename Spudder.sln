@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spudder", "Spudder\Spudder.csproj", "{5FAEC360-9E05-4971-853F-8465438BABB3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9B3DE98B-00E1-482A-B320-91BFF076A29C} = {9B3DE98B-00E1-482A-B320-91BFF076A29C}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpookVooper.Api", "..\SpookVooper.Api\SpookVooper.Api\SpookVooper.Api.csproj", "{9B3DE98B-00E1-482A-B320-91BFF076A29C}"
 EndProject
