@@ -1,71 +1,478 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+/* Custom styles from Mr. Spike himself */
+
+/* Color themes */
+
+:root {
+    --primary-color: #040d14;
+    --secondary-color: #aaaaaa;
+    --font-color: #ffffff;
+    --bg-color: #040d14;
+    --heading-color: #040d14;
+    --link-color: #00aaff;
+    --border-color: #303030;
+    --alt-border-color: #666666;
+    --input-color: #000000;
+    --comment-hue: rgba(0, 0, 0, 0.02);
 }
 
-/* Provide sufficient contrast against white background */
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    transition: 0.1s;
+}
+
 a {
-  color: #0366d6;
+    color: var(--link-color);
+}
+
+.p-1 {
+    color: var(--font-color);
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
+.svdropdown {
+    background-color: var(--input-color);
+    border-color: var(--alt-border-color);
+    color: var(--font-color);
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+select option {
+    background-color: var(--input-color);
+    border-color: var(--alt-border-color);
+    color: var(--font-color);
+}
+
+.form-control {
+    background-color: var(--input-color);
+    border-color: var(--alt-border-color);
+    color: var(--font-color);
+}
+
+    .form-control:disabled {
+        background-color: var(--border-color);
+        border-color: var(--alt-border-color);
+        color: var(--font-color);
+    }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: var(--font-color);
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: var(--font-color);
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: var(--font-color);
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+}
+
+.dropdown-menu.show {
+    color: var(--font-color);
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+}
+
+.dropdown-item {
+    color: var(--font-color);
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid var(--border-color);
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Theming */
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
+
+h1 {
+    color: var(--font-color);
+}
+
+h2 {
+    color: var(--font-color);
+}
+
+h3 {
+    color: var(--font-color);
+}
+
+h4 {
+    color: var(--font-color);
+}
+
+label {
+    color: var(--font-color);
+}
+
+p {
+    color: var(--font-color);
+}
+
+header {
+    /* Theming */
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    border-top: solid;
+    border-width: 1px;
+    border-top-color: var(--border-color);
+    color: var(--font-color);
+}
+
+.navbar {
+    color: var(--font-color);
+    border-bottom: solid;
+    border-width: 1px;
+    border-bottom-color: var(--border-color);
+}
+
+.btn-link {
+    color: var(--link-color);
+}
+
+.navbar .navbar-brand {
+    color: var(--font-color);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--secondary-color);
+}
+
+.navbar .nav-link {
+    color: var(--secondary-color);
+}
+
+.navbar-light .navbar-toggler {
+    color: var(--secondary-color);
+    border-color: var(--border-color);
+}
+
+.table thead th {
+    color: var(--font-color);
+    border-top-color: var(--border-color);
+    border-bottom-color: var(--border-color);
+}
+
+.table th {
+    color: var(--font-color);
+    border-top-color: var(--border-color);
+}
+
+.table td {
+    color: var(--font-color);
+    border-top-color: var(--border-color);
+}
+
+/* Other styles */
+
+.govpfp {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.smallpfp {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 40px;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.notidot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 15px;
+    font-size: 11px;
+}
+
+/* Slider CSS */
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 28px;
+    position: relative;
+    width: 54px;
+}
+
+    .theme-switch input {
+        display: none;
+    }
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+    .slider:before {
+        background-color: #fff;
+        bottom: 4px;
+        content: "";
+        height: 20px;
+        left: 4px;
+        position: absolute;
+        transition: .4s;
+        width: 20px;
+    }
+
+input:checked + .slider {
+    background-color: #66bb6a;
+}
+
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+/* Forum CSS */
+.forum-card {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 5%;
+}
+
+.comment-card {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: var(--comment-hue);
+    margin-top: 5px;
+}
+
+.srow {
+    border-top: 1px solid var(--border-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.forumlistcard {
+    border: 1px solid var(--border-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.scolumn {
+    display: table-cell;
+    justify-self: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.forumtable-text {
+    margin-bottom: 0.5rem;
+    height: 100%;
+    top: 50%;
+    bottom: 50%;
+}
+
+.likebutton {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.memberbox {
+    border-top: 1px solid var(--border-color);
+}
+
+.nametext {
+    text-shadow: -1px -1px 0 var(--border-color), 0 -1px 0 var(--border-color), 1px -1px 0 var(--border-color), 1px 0 0 var(--border-color), 1px 1px 0 var(--border-color), 0 1px 0 var(--border-color), -1px 1px 0 var(--border-color), -1px 0 0 var(--border-color);
+    font-weight: 600;
+    word-break: break-all;
+    display: inline-block;
+}
+
+.memberpfp {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin: 4px;
+    display: inline-block;
+}
+
+.newscontent {
+    word-break: break-word;
+    width: 100%;
+}
+
+    .newscontent * {
+        width: 100%;
+    }
+
+.largeimage {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.nerdcraft-rules-info-tab {
+    max-width: 90%;
+    margin: auto;
+    padding-left: 2em;
+    font-size: 24px;
+}
+
+.money-green {
+    color: limegreen;
+}
+
+.money-red {
+    color: red;
+}
+
+.chat-box {
+    border: 1px solid var(--border-color);
+    width: 95%;
+    height: 200px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chat-view {
+    height: 160px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+.chat-input {
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    background: var(--bg-color);
+    color: white;
+}
+
+.chat-message {
+    color: white;
+    margin: 0px;
+    word-break: break-all;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin: 10px;
 }

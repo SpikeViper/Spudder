@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Pomelo.EntityFrameworkCore.MySql.Storage;
+using Spudder.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,5 +23,9 @@ namespace Spudder
         {
             base.OnModelCreating(modelBuilder);
         }
+
+        // These are the database sets we can access
+        public DbSet<Spud> Spuds { get; set; }
+        public DbSet<Like> Likes { get; set; }
     }
 }
