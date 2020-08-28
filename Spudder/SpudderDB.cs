@@ -27,5 +27,6 @@ namespace Spudder
         // These are the database sets we can access
         public DbSet<Spud> Spuds { get; set; }
         public DbSet<Like> Likes { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
