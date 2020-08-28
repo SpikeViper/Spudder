@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Spudder.Models
 {
-    public class Spud
+    public class User
     {
         [Key]
         public string Svid { get; set; }
