@@ -6,4 +6,10 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     <p>spikes svid: @await SpookVooperAPI.Users.GetSVIDFromUsername("SpikeViper")</p>
+    @{ 
+        string svid = await SpookVooperAPI.Users.GetSVIDFromUsername("SpikeViper");
+        SpookVooper.Api.Entities.User user = await SpookVooperAPI.Users.GetUser(svid);
+
+        <p>@user.UserName</p>
+    }
 </div>

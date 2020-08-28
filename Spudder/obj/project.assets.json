@@ -450,6 +450,18 @@
           "lib/netstandard2.0/Pomelo.JsonObject.dll": {}
         }
       },
+      "SpookVooper.Api/1.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/SpookVooper.Api.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SpookVooper.Api.dll": {}
+        }
+      },
       "System.Collections.Immutable/1.7.1": {
         "type": "package",
         "compile": {
@@ -539,19 +551,6 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
-        }
-      },
-      "SpookVooper.Api/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "compile": {
-          "bin/placeholder/SpookVooper.Api.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SpookVooper.Api.dll": {}
         }
       }
     }
@@ -1187,6 +1186,19 @@
         "pomelo.jsonobject.nuspec"
       ]
     },
+    "SpookVooper.Api/1.0.5": {
+      "sha512": "3UpmPVUHcD2b9xT9iVs0peFPcDqyqIdMsatrdMedGabdyFLpORqedwrd/wytKjcUd5JSc/4NuWvYoK87Ihf/+w==",
+      "type": "package",
+      "path": "spookvooper.api/1.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/SpookVooper.Api.dll",
+        "spookvooper.api.1.0.5.nupkg.sha512",
+        "spookvooper.api.nuspec",
+        "unity-256.png"
+      ]
+    },
     "System.Collections.Immutable/1.7.1": {
       "sha512": "B43Zsz5EfMwyEbnObwRxW5u85fzJma3lrDeGcSAV1qkhSRTNY5uXAByTn9h9ddNdhM+4/YoLc/CI43umjwIl9Q==",
       "type": "package",
@@ -1486,11 +1498,6 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "SpookVooper.Api/1.0.0": {
-      "type": "project",
-      "path": "../../SpookVooper.Api/SpookVooper.Api/SpookVooper.Api.csproj",
-      "msbuildProject": "../../SpookVooper.Api/SpookVooper.Api/SpookVooper.Api.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1498,7 +1505,7 @@
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 3.1.7",
       "Microsoft.EntityFrameworkCore >= 3.1.7",
       "Pomelo.EntityFrameworkCore.MySql >= 3.1.2",
-      "SpookVooper.Api >= 1.0.0"
+      "SpookVooper.Api >= 1.0.5"
     ]
   },
   "packageFolders": {
@@ -1530,11 +1537,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {
-            "C:\\Users\\SpikeViper\\source\\repos\\SpookVooper.Api\\SpookVooper.Api\\SpookVooper.Api.csproj": {
-              "projectPath": "C:\\Users\\SpikeViper\\source\\repos\\SpookVooper.Api\\SpookVooper.Api\\SpookVooper.Api.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -1557,6 +1560,10 @@
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
             "version": "[3.1.2, )"
+          },
+          "SpookVooper.Api": {
+            "target": "Package",
+            "version": "[1.0.5, )"
           }
         },
         "imports": [

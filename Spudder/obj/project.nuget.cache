@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "A0ten8JEusy0uB1vDwlxs8sqNBnsSMdZdbsjtW1XNbGXUiuMAqlKoclCNSpaE4LUNJtg+fswor+ii8q+JJyavw==",
+  "dgSpecHash": "zZTE2Wu6a4knYHwlnv2FRE1zAwjuOFs7N0mVRYEPJC2F5bK5LAgdJu6AIaFWzdsEUtyOLqlJfGGjHtXWK1AHQA==",
   "success": true,
   "projectFilePath": "C:\\Users\\SpikeViper\\source\\repos\\Spudder\\Spudder\\Spudder.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,7 @@
     "C:\\Users\\SpikeViper\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\SpikeViper\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.1.2\\pomelo.entityframeworkcore.mysql.3.1.2.nupkg.sha512",
     "C:\\Users\\SpikeViper\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",
+    "C:\\Users\\SpikeViper\\.nuget\\packages\\spookvooper.api\\1.0.5\\spookvooper.api.1.0.5.nupkg.sha512",
     "C:\\Users\\SpikeViper\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
     "C:\\Users\\SpikeViper\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\SpikeViper\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
